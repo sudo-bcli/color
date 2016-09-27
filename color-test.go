@@ -22,7 +22,7 @@ import (
 func Test (){
 
 	const HEAD = "head "
-	const TAIL = "tail "
+	const TAIL = " tail"
 
 	// regular
 	fmt.Println(HEAD + Black("black") 		+ TAIL)
