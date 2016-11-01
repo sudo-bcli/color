@@ -9,12 +9,32 @@ import (
 // version: 1.0.0
 // author:  Beichen Li, bclicn@gmail.com, relidin@126.com, 2016-9-23
 // see:     http://misc.flogisoft.com/bash/tip_colors_and_formatting
+// usage:
+// For GoLang official code layout
+// 	$ go get github.com/bclicn/color
+// 	# in your project
+// 	import "github.com/bclicn/color"
+// 	func main() {
+//		fmt.Println(color.Red("I'm red!"))
+//		color.Test()
+//	}
+// For quick （brainless） usage
+//	# put color.go and yourScript.go under a same folder
+//	# change package name of both scripts to main
+//	package main
+//	# call color functions from yourScript by
+//	fmt.Println(Red("I'm Red!"))
+//	color.Test()
+//	# run your script by
+//	$ go run color.go yourScript.go
+//	# build your script by
+//	$ go build color.go yourScript.go
 
 const (
 	// common
 	reset 		= "\033[0m" 	// auto reset the rest of text to default color
 	normal		= 0
-	bold 		= 1 		// change this value if you want Ber text
+	bold 		= 1 		// increase this value if you want bolder text
 	// special
 	dim		= 2
 	underline 	= 4
@@ -22,13 +42,12 @@ const (
 	reverse		= 7
 	hidden		= 8
 	// color
-	// default	= 39
-	black 		= 30
+	black 		= 30		// default = 39
 	red		= 31
 	green		= 32
 	yellow		= 33
 	blue		= 34
-	purple		= 35	// purple = magenta
+	purple		= 35		// purple = magenta
 	cyan		= 36
 	lightGray 	= 37
 	darkGray 	= 90
@@ -260,4 +279,8 @@ func Invert (txt string) string{
 
 func Hide (txt string) string{
 	return Render(hidden, normal,  txt)
+}
+
+func Test() {
+	ColorTest()
 }

@@ -11,18 +11,18 @@ import (
 // see:     http://misc.flogisoft.com/bash/tip_colors_and_formatting
 // ---------
 // usage:
-// 1. For GoLang official layout
+// For GoLang official code layout
 // 	$ go get github.com/bclicn/color
 // 	# in your project
 // 	import "github.com/bclicn/color"
 // 	func main() {
-//		Test()
+//		color.Test()
 //	}
 
-func Test (){
+func ColorTest (){
 
-	const HEAD = "head "
-	const TAIL = " tail"
+	const HEAD = " "
+	const TAIL = " "
 
 	// regular
 	fmt.Println(HEAD + Black("black") 		+ TAIL)
@@ -83,6 +83,6 @@ func Test (){
 	fmt.Println("This is a " + Dim("dimmed") + " text")
 	fmt.Println("Add a " + Underline("underline"))
 	fmt.Println("Use " + Invert("invert") + " to highlight your text")
-	fmt.Println("Your password is hidden:" + Hide("myPass"))
+	fmt.Println("Your password is:" + Hide("myPass"))
 	fmt.Println("OMG I'm " + Blink("blinking") + " !!!")
 }

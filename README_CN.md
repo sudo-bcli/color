@@ -8,10 +8,11 @@
 ## 安装
 
 1. __确保__你已经读过  [GoLang官方文件结构](https://golang.org/doc/code.html)
-2. `go get github.com/bclicn/color`
+2. 确保你的GOPATH环境变量正确
+3. `go get github.com/bclicn/color`
 3. 在你的脚本中,`import "github.com/bclicn/color"` 然后调用 `color.Test()`查看全部效果
-4. 使用`fmt.Println("Hello" + color.Red("World"))`进行快速使用
-4. 其他的API调用示例可以去`color-test.go`中查看
+5. 使用`fmt.Println("Hello" + color.Red("World"))`进行彩色输出
+4. 其他的API调用示例在`color-test.go`中
 
 ## 快速(无脑)使用
 
@@ -21,9 +22,25 @@
 4. 运行`go run color.go yourScript.go`
 5. 你也可以直接`go build color.go yourScript.go`
 
+## 快速调用示例
+
+    package main
+
+    import (
+	    "fmt"
+	    "github.com/bclicn/color"
+    )
+
+    func main(){
+	    fmt.Println(color.Red("Red output"))
+	    color.Test()
+    }
+
 ## MIT License
 
-Beichen Li, 2016-9-27
+
+
+Beichen Li, 2016-11-1
 
 
  
