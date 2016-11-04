@@ -12,7 +12,7 @@
 3. `go get github.com/bclicn/color`
 3. 在你的脚本中,`import "github.com/bclicn/color"` 然后调用 `color.Test()`查看全部效果
 5. 使用`fmt.Println("Hello" + color.Red("World"))`进行彩色输出
-4. 其他的API调用示例在`color-test.go`中
+4. 其他的API调用示例在`color-main.go`中
 
 ## 快速(无脑)使用
 
@@ -36,11 +36,11 @@
 	    color.Test()
     }
 
-## MIT License
+##  License
 
+(MIT)[LICENSE]
 
-
-Beichen Li, 2016-11-1
+Beichen Li, 2016-11-4
 
 
  

@@ -12,7 +12,7 @@ GoLang colorized output library for Mac & Linux Shell, [中文版说明](README_
 3. `$ go get github.com/bclicn/color`
 4. In your script, `import "github.com/bclicn/color"` then call `color.Test()`
 5. Use `fmt.Println("Hello" + color.Red("World"))` to assemble a colorized output
-6. Full API list is available in `color-test.go`
+6. Full API list is available in `color-main.go`
 
 ## Quick (brainless) Usage
 
@@ -36,9 +36,11 @@ GoLang colorized output library for Mac & Linux Shell, [中文版说明](README_
 	    color.Test()
     }
 
-## MIT License
+## License
 
-Beichen Li, 2016-11-1
+(MIT)[LICENSE]
+
+Beichen Li, 2016-11-4
 
 
  

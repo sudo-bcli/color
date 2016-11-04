@@ -7,9 +7,8 @@ import (
 // github.com/bclicn/color
 // colorized output for Mac & Linux terminal
 // version: 1.0.0
-// author:  Beichen Li, bclicn@gmail.com, relidin@126.com, 2016-9-23
+// author:  Beichen Li, bclicn@gmail.com (official but is banned in fuckin China), relidin@126.com, 2016-11-4
 // see:     http://misc.flogisoft.com/bash/tip_colors_and_formatting
-// ---------
 // usage:
 // For GoLang official code layout
 // 	$ go get github.com/bclicn/color
@@ -21,11 +20,11 @@ import (
 
 func ColorTest (){
 
-	const HEAD = " "
-	const TAIL = " "
+	const HEAD = " "	// I'm adding HEAD and TAIL just to tell you it works in
+	const TAIL = " "	// assembled strings :3
 
 	// regular
-	fmt.Println(HEAD + Black("black") 		+ TAIL)
+	fmt.Println(HEAD + Black("black") 		+ TAIL)	// if you are using a black console, of course you won't see this
 	fmt.Println(HEAD + Red("red") 			+ TAIL)
 	fmt.Println(HEAD + Green("green") 		+ TAIL)
 	fmt.Println(HEAD + Yellow("yellow") 		+ TAIL)
@@ -43,7 +42,7 @@ func ColorTest (){
 	fmt.Println(HEAD + White("white") 		+ TAIL)
 
 	// bold
-	fmt.Println(HEAD + BBlack("bold black")			+ TAIL)
+	fmt.Println(HEAD + BBlack("bold black")			+ TAIL)	// and can't see this too
 	fmt.Println(HEAD + BRed("bold red")			+ TAIL)
 	fmt.Println(HEAD + BGreen("bold green")			+ TAIL)
 	fmt.Println(HEAD + BYellow("bold yellow")		+ TAIL)
@@ -61,7 +60,7 @@ func ColorTest (){
 	fmt.Println(HEAD + BWhite("bold white")			+ TAIL)
 
 	// background
-	fmt.Println(HEAD + GBlack("background black") 			+ TAIL)
+	fmt.Println(HEAD + GBlack("background black") 			+ TAIL)	// this neither
 	fmt.Println(HEAD + GRed("background red") 			+ TAIL)
 	fmt.Println(HEAD + GGreen("background green") 			+ TAIL)
 	fmt.Println(HEAD + GYellow("background yellow") 		+ TAIL)
@@ -84,5 +83,5 @@ func ColorTest (){
 	fmt.Println("Add a " + Underline("underline"))
 	fmt.Println("Use " + Invert("invert") + " to highlight your text")
 	fmt.Println("Your password is:" + Hide("myPass"))
-	fmt.Println("OMG I'm " + Blink("blinking") + " !!!")
+	fmt.Println("OMG I'm " + Blink("blinking") + " !!!")	// blinking works on my mac, no luck on linux though
 }
