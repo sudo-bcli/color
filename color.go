@@ -7,10 +7,10 @@ import (
 // github.com/bclicn/color
 // colorized output for Mac & Linux terminal
 // version: 1.0.0
-// author:  Beichen Li, bclicn@gmail.com (official but is banned in fuckin China), relidin@126.com, 2016-9-23
+// author:  Beichen Li, bclicn@gmail.com (banned), relidin@126.com, 2016-9-23
 // see:     http://misc.flogisoft.com/bash/tip_colors_and_formatting
 // usage:
-// For GoLang official code layout
+// Official layout
 // 	$ go get github.com/bclicn/color
 // 	# in your project
 // 	import "github.com/bclicn/color"
@@ -18,7 +18,7 @@ import (
 //		fmt.Println(color.Red("I'm red!"))
 //		color.Test()
 //	}
-// For quick （brainless） usage
+// Quick usage
 //	# put color.go and yourScript.go under a same folder
 //	# change package name of both scripts to main
 //	package main
@@ -335,7 +335,7 @@ func Hide (txt string) string{
 	return Render(hidden, normal,  txt)
 }
 
-// test results of all functions
+// test all functions
 func Test() {
 	ColorTest()
 }
