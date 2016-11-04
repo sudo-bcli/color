@@ -38,7 +38,7 @@ GoLang colorized output library for Mac & Linux Shell, [中文版说明](README_
 
 ## License
 
-(MIT)[LICENSE]
+[MIT](LICENSE)
 
 Beichen Li, 2016-11-4
 

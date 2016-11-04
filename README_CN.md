@@ -38,7 +38,7 @@
 
 ##  License
 
-(MIT)[LICENSE]
+[MIT](LICENSE)
 
 Beichen Li, 2016-11-4
 
