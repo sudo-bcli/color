@@ -1,9 +1,3 @@
-package color
-
-import (
-	"strconv"
-)
-
 // github.com/bclicn/color
 // colorized output for Mac & Linux terminal
 // version: 1.0.0
@@ -29,6 +23,12 @@ import (
 //	$ go run color.go yourScript.go
 //	# build your script by
 //	$ go build color.go yourScript.go
+
+package color
+
+import (
+	"strconv"
+)
 
 const (
 	// common
