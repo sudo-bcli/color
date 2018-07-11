@@ -40,7 +40,4 @@
 
 [MIT](LICENSE)
 
-Beichen Li, 2016-11-4
-
-
- 
+bcli, 2018-7-11

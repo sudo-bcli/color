@@ -40,7 +40,4 @@ GoLang colorized output library for Mac & Linux Shell, [中文版说明](README_
 
 [MIT](LICENSE)
 
-Beichen Li, 2016-11-4
-
-
- 
+bcli, 2018-7-11
